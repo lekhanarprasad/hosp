@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patients Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Patient Management</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="diseases.html">Diseases</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Add a New Patient</h2>
+    <form id="patientForm">
+      <input type="text" id="patientName" placeholder="Name" required>
+      <input type="number" id="patientAge" placeholder="Age" required>
+      <input type="text" id="patientDisease" placeholder="Disease" required>
+      <button type="submit">Add Patient</button>
+    </form>
+
+    <h3>Existing Patients</h3>
+    <table id="patientList">
+      <thead>
+        <tr><th>Name</th><th>Age</th><th>Disease</th><th>Action</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hospital Management</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
